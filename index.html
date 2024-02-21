@@ -13,162 +13,173 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+<!--Fontes-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<a href="https://wa.me/5531993169079?text=Olá,%20Swiftie!"class="float" target="_blank">
 
-<i class="fa fa-whatsapp my-float"></i>
+<!--WhatsApp-->
+<a href="https://wa.me/5531993169079?text=Olá,%20Swiftie!"class="float" target="_blank">
+<i class="fa fa-whatsapp"></i>
 </a>
 
  
 <!-- ESTILIZAÇÃO DOS ELEMENTOS -->
 <style>
 @font-face {
-  font-family: Pistilli-Roman;
-  src: url(Pistilli-Roman.woff);
-  
+	font-family: Pistilli-Roman;
+	src: url(Pistilli-Roman.woff);
 }
+
 
 .pacifico-regular {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: thin;
+	font-family: "Pacifico", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
+.header img{
+	width:100%;
+	margin-top:1%;
+	box-shadow: 5px 5px 5px rgba(218,97,136,255);
+
+}
 
 div.polaroid {
-  width: auto;
-  padding: 10px 10px 0px 10px;
+  width: 10vw;
+  height:10vw;
+  padding: 1% 1% 1% 1%;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 5px 5px 5px rgba(24,24,24);
-
-;
-  position:flex;
+  box-shadow: 5px 5px 5px salmon;
   z-index:-2;
-  margin-top:5%;
- 
+  display:table;
 }
+
+div.polaroid .caption{
+	font-family: Pacifico;
+	text-align:center;
+	color: #cb5468;
+	font-weight: bold;
+	font-size:1.2vw;
+}
+
+div.polaroid img{
+	width: 10vw;
+	height:10vw;
+	object-fit: cover;
+}
+
 
 div.rotate_right {
-    float: right;
-    transform: rotate(7deg);
-   	margin-right:3%;
+	float: left;
+    transform: rotate(5deg);
+   	margin-right:1%;
+	margin-left:1%;
+	object-fit:cover;
 }
+
 
 div.rotate_left {
-  float: left;
-  transform: rotate(-8deg);
-  margin-left:3%;
-}
-#mtrpolaroid{
-margin-top:10%;
-}
+	float: left;
+	transform: rotate(-3deg);
+	margin-left:1%;
+	margin-right:1%;
+	}
 
-
-#mtr img{
- width:283px;
- height:213px;
- object-fit: cover;
-}
-
-#lavender img{
- width:283px;
- height:213px;
- object-fit: cover;
-}
-
-#enchanted img{
- width:283px;
- height:213px;
- object-fit: cover;
-}
 
 .float{
-      position:fixed;
-      width:5px;
-      height:5px;
-      bottom:40px;
-      right:40px;
-      background-color:red;
-      color:MAROON;
-      border-radius:50px;
-      font-size:30px;
-	  z-index:1;
+	position:fixed;
+	width:5px;
+	height:5px;
+	bottom:40px;
+	right:40px;
+	border-radius:50px;
+	font-size:30px;
+	z-index:1;
 }
 
 
 body{
 	margin:0;
-    background-image: url("https://cdn.wallpapersafari.com/94/16/SU4MfZ.jpg");  
-    background-repeat: no-repeat;
+    background-image:linear-gradient(to right, #faa2ab , #ffe98f);  
     background-attachment:fixed;
     background-size:cover;
     background-position: right 50px;
 
 }
 
-.download{
-	align:center;
-	border-radius: 20px;
-	text-align:center;
-
-}
-
-.lista{
+.setlist{
 	align:right;
-	background-color:rgba(249,132,56,0.8);
-    border-radius: 20px;
+	background-color:rgba(254,131,47,0.5);
+    border-radius: 10px;
     overflow:auto;
 	margin-left:7%;
-    margin-bottom:5%;
-    margin-top:7%;
-
+	margin-right:7%;
+    margin-bottom:7%;
+	margin-top:7%;
+	border: 1px solid white;
+	
 
 }
+
+.setlist h2{
+color:rgba(254,246,169,255);
+font-weight:lighter;
+}
+
 
 .Sobre1{
 	align:center;
-	background-color:rgb(177,97,170,0.5);
-    border-radius: 20px;
+	background-color: rgba(133,96,142,0.5);
+    border-radius: 10px;
     overflow:auto;
 	margin-left:7%;
     margin-right:7%;
-    margin-top:5%;
-	MARGIN-bottom:5%;
-    padding-left:5%;
-	padding-right:2%; 
+    margin-top:7%;
+	MARGIN-bottom:0;
+    padding:5%;
+	padding-top:1%;
+	text-align:justify;
+  	border: 1px solid white;
+
 
 }
 
-.Sobre1 h4{
-font-size:25px;
+.Sobre1 h2{
+	color:#2c0f2f;
+	font-family:"Pacifico";
+	text-align:center;
 }
 
-.Sobre2{
-	align:center;
-	background-color:rgb(177,97,170,0.5);
-    border-radius: 20px;
-    overflow:auto;
-	margin-left:7%;
-    margin-right:7%;
-    margin-top:5%;
-	MARGIN-bottom:5%;
-    padding-left:5%;
-	padding-right:2%; 
-
-}
 .Sobre1 p{
-font-family: "Trebuchet MS","sans-serif";
-color:rgba(41,18,37,255);
+	font-family: "Trebuchet MS","sans-serif";
+	color:rgba(41,18,37,255);
+	font-font-size:10px;
 }
 
-.Sobre2 p{
-font-family: "Trebuchet MS","sans-serif";
-color:rgba(41,18,37,255);
+.downloads{
+	align:center;
+	background-color: rgb(246,214,212);
+    border-radius: 10px;
+    overflow:auto;
+	margin-left:7%;
+    margin-right:7%;
+    margin-top:7%;
+	MARGIN-bottom:5%;
+    padding:5%;
+	padding-top:1%;
+	border: 1px solid white;
+	}
+.downloads h2{
+color:#cb5468;
 }
- 
+
+p{
+	font-family: "Trebuchet MS","sans-serif";
+	color:#20081b;
+}
+
 h1{
 	font-family:"Pistilli-Roman";
 	color:rgba(18,21,78,255);
@@ -181,8 +192,10 @@ h1{
 
 h2{
 	font-family:"Pacifico";
-	color:rgba(255,188,78,255);
 	text-align:center;
+	font-size:25px;
+
+	}
 }
 
 h3{
@@ -192,37 +205,43 @@ h3{
 }
 
 h4{
-font-family: Pacifico;
-text-align:center;
-	color: rgba(61,0,110,255);
-}    
-h5{
-font-family: Pacifico;
-text-align:center;
-	color: rgb(249,132,56);
-    font-size:30;
+	font-family:"Pacifico";
+	text-align:center;
+	color: purple;
 }
 
 table,td,th,tr{
 	border: 2px dotted;
-    BORDER-COLOR:rgba(254,236,149,255);
+    border-color:rgba(254,236,149,255);
     text-align: center; 
     border-collapse: collapse;
-    margin-left:5%;
-    margin-right:5%;
  	border-style: ridge;
 }
 
+table{
+	width:90%;
+    margin-left:5%;
+    margin-right:5%;
+ 	border-style: ridge;
+	table-layout : fixed;
+	font-family:"Trebuchet MS","sans-serif";
+
+}
+
+td{
+	width:11%;
+	font-size:1.2vw;
+
+}
 
 thead{
-	font-family:"candara","sans-serif";
-	color:rgba(254,198,93,255);
+	color:rgba(255,246,171,255);
+	font-size:1.5vw;
 }
 
 tbody{
-	color:black);
-	font-family:"Trebuchet MS","sans-serif";
-	font-size:15px;
+	color:black;
+	font-size:80%;
 }
 
 tfoot{
@@ -234,23 +253,18 @@ a{
 	font-family: "Trebuchet MS","sans-serif";
 
 }
-a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-}
 
-a:visited {
-    color: white  ;
+a:link {
+    color: crimson;
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-  color: rgba(18,21,78,255);
+  color: #ff8831;
   background-color: transparent;
-  text-decoration: overline;
 }
+
 a:active {
     color: crimson;
     background-color: transparent;
@@ -258,42 +272,82 @@ a:active {
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: rgba(189,8,35,255);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display:flex;
-    justify-content: flex-end;
-  z-index:1;
+	overflow: hidden;
+	background-color: rgba(189,8,35,255);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display:flex;
+	justify-content: flex-end;
+	z-index:1;
+}
+.navbar img{
+	width:200px;
+	height:auto;
+	margin-top:10px;
+	top:1%;
+	left:1%;
+	position:absolute;
+	object-fit:contain;
+
 }
 
+
 .navbar a {
-  display: block;
-  color: #f2f2f2;
-  text-align: right;
-  padding: 30px 16px;
-  text-decoration: none;
-  font-size: 20px;
+	display: flex;
+	color: #f2f2f2;
+	text-align: right;
+	padding: 30px 16px;
+	text-decoration: none;
+	font-size: 20px;
 }
 
 .navbar a:hover {
-  background: rgba(18,21,78,255);
-  color: crimson;
+	background: rgba(18,21,78,255);
+	color: crimson;
 }
 
 footer{
-background:rgba(236,100,132,0.9);
-padding:3px;
+background:rgba(18,21,78,255);
+padding:1%;
 font-family:"Trebuchet MS","sans-serif";
 text-align:center;
 }
 
-footer a:hover{
-text-decoration: none;
-color:crimson;
-
+footer p{
+color: snow;
 }
+footer h2{
+color: rgba(255,246,171,255);
+text-decoration:underline;
+font-weight:lighter;
+}
+
+
+footer a:link {
+color: crimson;
+text-decoration:none;
+}
+
+footer a:hover{
+color:orange;
+}
+
+.bg{
+	align:center;
+	border-radius: 20px;
+	text-align:center;
+	position:relative;
+}
+
+#bg img{
+border-radius: 20px;
+box-shadow: 2px 2px #e8665c, 4px 4px salmon;
+width:200px;
+height:auto;
+align:center;
+}
+
 
 bannertet{
 text-align:right;
@@ -301,19 +355,12 @@ position: fixed;
 z-index:1;
 }
 
-#bgdownload img{
-border-radius: 50px;
-box-shadow: 2px 2px red, 4px 4px orange;
-width:100px;
-height:auto;
-align:center;
-}
 
 
 </style>
 
 <!--Título-->
-<title>The Eras Tour</title>
+<title>The Eras Tour BR</title>
 
 
 <!-- Fim do Cabeçalho -->
@@ -326,35 +373,47 @@ align:center;
 <div id="bannertet">	
 </div>
 <div id="home">
-<p>.</p>
-	</div>
+	<br></div>
 <div class="navbar">
 	<!-- TÍTULO DA PÁGINA -->
-	<h1>THE ERAS TOUR</h1>
-  <a href="#home">Home</a>
-  <a href="#sobretet">Sobre a Turnê</a>
-  <a href="#contato">Contato</a>
+	<img src="https://i.imgur.com/c3InZ1s.png"/>
+  	<a href="#home">Home</a>
+	<a href="#sobretet">Sobre a Turnê</a>
+	<a href="#setlist">Setlist</a>
+	<a href="#downloads">Downloads</a>
+	<a href="#contato">Contato</a>
+
 </div>
-
-
-
-
-<!-- Imagem 1 -->
-
-<div id="mtrpolaroid">
-<p><div class="polaroid rotate_right">
-  <div id="mtr"><img id="mtr" src="https://mcdn.wallpapersafari.com/medium/71/92/XnOHU1.jpg" alt="My Tears Ricochet" > </div>
-  <h5 class="caption">My Tears Ricochet</h5>
+<div class="header">
+<img src="https://i.imgur.com/hiEsZjU.png"/>
 </div>
+<div id="sobretet">	
+<br>
+</div>
+<!-- SOBRE A TURNÊ -->
+
+	<div  class="Sobre1">
+		<h2>Sobre a Turnê</h2>
+		<p> The Eras Tour (ou Taylor Swift: The Eras Tour) é a sexta turnê em curso da cantora e compositora estadunidense Taylor Swift, assim como a sua segunda turnê em estádios após a Reputation Stadium Tour (2018). Incapaz de promover os seus álbuns de estúdio Lover (2019), Folklore (2020) e Evermore (2020) por conta da pandemia de COVID-19, ela está embarcando na The Eras Tour em apoio a toda sua discografia, incluindo seu último lançamento, Midnights (2022). A turnê foi oficialmente anunciada em 1 de novembro de 2022, sendo iniciada no dia 17 de março de 2023 em Glendale, Arizona. Até o momento, foram confirmados 71 concertos em estádios na América do Norte, sendo sessenta e dois nos Estados Unidos e nove no Canadá, além de 13 na América Latina: quatro no México, três na Argentina e seis no Brasil (três no Rio de Janeiro e três em São Paulo). Também foram adicionados 10 concertos na Ásia (Japão e Singapura), 7 na Oceania (Austrália) e 50 na Europa. Com um total de 151 apresentações, a turnê se tornou a maior de Taylor em número de concertos, superando a Fearless Tour que detinha esse recorde .</p>
+
+		<p> Anunciada após o lançamento de seu décimo álbum de estúdio, Midnights (2022), a The Eras Tour começou em 17 de março de 2023, em Glendale, Estados Unidos, e deve terminar em 8 de dezembro de 2024, em Vancouver, Canadá. O show dura mais de três horas, com um repertório de 44 músicas divididas em 10 atos distintos que retratam conceitualmente os álbuns. Recebeu aclamação unânime da crítica, com ênfase no conceito, produção, estética, musicalidade, vocais, resistência e versatilidade de Taylor. Swift lançou vários trabalhos durante a turnê: edições estendidas de Midnights, os álbuns regravados Speak Now (Taylor's Version) e 1989 (Taylor's Version) e os videoclipes de "Karma" e "I Can See You", além de "Cruel Summer" como single.</p>
+		<br>
+		<p>Publicações descreveram a The Eras Tour como um fenômeno cultural, relatando seu impacto multifacetado. A turnê teve uma demanda sem precedentes, quebrando recordes de vendas de ingressos e locais em todo o mundo. A turnê elevou economias, negócios e turismo, atraiu grandes multidões de espectadores além dos estádios, dominou os ciclos de notícias e mídias sociais e inspirou homenagens de vários governos e organizações.</p>
+		<br>
+		<p><i>fonte:wikipedia</i></p>
+	</div>
+
+
+<div id="setlist">
+<br>
 </div>
 
 <!-- TABELA -->
-<div ID="setlist"class="lista">
-<table>
-<h2>Setlist Organizada Por Era</h2>
-
-	<thead >
-<tr>
+<div class="setlist">
+	<table>
+		<h2>Setlist Organizada Por Era</h2>
+		<thead>
+		<tr>
 		<th>Lover</th>
 		<th>Fearless</th>
         <th>Evermore</th>
@@ -365,9 +424,9 @@ align:center;
         <th>1989</th>
         <th>Midnights</th>
 		</tr>
-	</thead>
+		</thead>
 	
-	<tbody>
+		<tbody>
 		<tr >
 		<td>MA&HP</td>
 		<td>Fearless</td>
@@ -454,9 +513,9 @@ align:center;
 		</tr>
         
         
-	</tbody>
+		</tbody>
 
-	<tfoot>
+		<tfoot>
 		<tr><!-- ANO DA ERA -->
 			<td>2019</td>
 			<td>2008</td>
@@ -470,65 +529,65 @@ align:center;
 
 		</tr>
 
-	</tfoot>
+		</tfoot>
+	</table>
 
-</table>
-<br>
+	<div id="downloads">	
+		<br>
+	</div>
 </div>
-<div id="sobretet">
-<hr>
+<!-- DOWNLOADS -->
+
+
+<div class="downloads">
+	<h2>Downloads</h2>
+	<div class="Downloads">
+		<!-- BAIXAR IMAGEM DE FUNDO -->
+		<div class="bg">
+		<p>Imagem de Fundo:<p>
+			<div id="bg">
+				<a href="The Eras Tour BG" download><img src="https://cdn.wallpapersafari.com/94/16/SU4MfZ.jpg" alt="Background"></a>
+			</div>
+			<br>
+		</div>
+		<hr>
+		<br>
+		<!-- Imagem 1 - MTR -->
+		<div class="polaroid rotate_right">
+			<div id="mtr">
+				<a href="My Tears Ricochet" download><img src="https://mcdn.wallpapersafari.com/medium/71/92/XnOHU1.jpg" alt="My Tears Ricochet"></a>
+			</div>
+			<p class="caption">My Tears Ricochet</p>
+		</div>
+
+		<!-- Imagem 2 -->
+		<div class="polaroid rotate_left">
+			<div id="lavender">
+				<a href="Lavender Haze" download><img src="https://mcdn.wallpapersafari.com/medium/76/69/wW51eY.jpg" alt="Lavender Haze"></a>
+			</div>
+			<p class="caption">Lavender Haze</p>
+		</div>
+
+		<!-- Imagem 3 -->
+		<div class="polaroid rotate_right">
+			<div id="enchanted">
+				<a href="Enchanted" download><img id="enchanted" src="https://mcdn.wallpapersafari.com/medium/14/34/WL02mT.jpg" alt="My Tears Ricochet"></a>
+			</div>
+			<p class="caption">Enchanted</p>
+		</div>
+
+
+
+		
+	</div>
 </div>
-<!-- Imagem 2 -->
-
-<div class="polaroid rotate_left">
-  <div id="lavender">
-  <img src="https://mcdn.wallpapersafari.com/medium/76/69/wW51eY.jpg" alt="Lavender Haze">
-  </div>
-  <h4 class="caption">Lavender Haze</h4>
-</div>
-
-
-
-<!-- SOBrE A TURNÊ -->
-<div class="Sobre1">
-<div id="titulosobre">
-	<h4>Sobre a Turnê</h4></div>
-<p> The Eras Tour (ou Taylor Swift: The Eras Tour) é a sexta turnê em curso da cantora e compositora estadunidense Taylor Swift, assim como a sua segunda turnê em estádios após a Reputation Stadium Tour (2018). Incapaz de promover os seus álbuns de estúdio Lover (2019), Folklore (2020) e Evermore (2020) por conta da pandemia de COVID-19, ela está embarcando na The Eras Tour em apoio a toda sua discografia, incluindo seu último lançamento, Midnights (2022). A turnê foi oficialmente anunciada em 1 de novembro de 2022, sendo iniciada no dia 17 de março de 2023 em Glendale, Arizona. Até o momento, foram confirmados 71 concertos em estádios na América do Norte, sendo sessenta e dois nos Estados Unidos e nove no Canadá, além de 13 na América Latina: quatro no México, três na Argentina e seis no Brasil (três no Rio de Janeiro e três em São Paulo). Também foram adicionados 10 concertos na Ásia (Japão e Singapura), 7 na Oceania (Austrália) e 50 na Europa. Com um total de 151 apresentações, a turnê se tornou a maior de Taylor em número de concertos, superando a Fearless Tour que detinha esse recorde .</p>
-</div>
-
-
-<!-- Imagem 3 -->
-<p><div class="polaroid rotate_right">
-  <div id="enchanted"><img id="enchanted" src="https://mcdn.wallpapersafari.com/medium/14/34/WL02mT.jpg" alt="My Tears Ricochet" > </div>
-  <h4 class="caption">Enchanted</h4>
-</div>
-
- <div class="Sobre2">
-	<p> Anunciada após o lançamento de seu décimo álbum de estúdio, Midnights (2022), a The Eras Tour começou em 17 de março de 2023, em Glendale, Estados Unidos, e deve terminar em 8 de dezembro de 2024, em Vancouver, Canadá. O show dura mais de três horas, com um repertório de 44 músicas divididas em 10 atos distintos que retratam conceitualmente os álbuns. Recebeu aclamação unânime da crítica, com ênfase no conceito, produção, estética, musicalidade, vocais, resistência e versatilidade de Taylor. Swift lançou vários trabalhos durante a turnê: edições estendidas de Midnights, os álbuns regravados Speak Now (Taylor's Version) e 1989 (Taylor's Version) e os videoclipes de "Karma" e "I Can See You", além de "Cruel Summer" como single.</p>
-<br>
-	<p>Publicações descreveram a The Eras Tour como um fenômeno cultural, relatando seu impacto multifacetado. A turnê teve uma demanda sem precedentes, quebrando recordes de vendas de ingressos e locais em todo o mundo. A turnê elevou economias, negócios e turismo, atraiu grandes multidões de espectadores além dos estádios, dominou os ciclos de notícias e mídias sociais e inspirou homenagens de vários governos e organizações.</p>
-<br>
-<p><i>fonte:wikipedia</i></p>
-</div>
-
-
-
-
 
 <footer id="contato">
+	<h2>Hello, Swiftie!</h2>
 <p>Dúvidas sobre a turnê? Entre em contato com a adm!<br>
   <a href="mailto:theerastourBR@gmail.com">theerastourBR@gmail.com</a></p>
 
-<!-- BAIXAR IMAGEM DE FUNDO -->
-<div class="download">
-<hr>
-<p>Baixar Imagem de Fundo:<p>
-<div id="bgdownload">
-<a href="The Eras Tour BG" download>
-  <img src="https://cdn.wallpapersafari.com/94/16/SU4MfZ.jpg" alt="Background">
- </a></div>
-</div>
-</div>
+
 </footer>
 
 <!-- Fim do Corpo da página -->
