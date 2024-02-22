@@ -11,7 +11,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <!--Fontes-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +32,9 @@
 	src: url(Pistilli-Roman.woff);
 }
 
-
+form{
+	font-family: "Trebuchet MS","sans-serif";
+}
 .pacifico-regular {
 	font-family: "Pacifico", cursive;
 	font-weight: 400;
@@ -46,12 +49,12 @@
 }
 
 div.polaroid {
-  width: 10vw;
-  height:10vw;
+  width: 20vw;
+  height:20vw;
   padding: 1% 1% 1% 1%;
   border: 1px solid #BFBFBF;
   background-color: white;
-  box-shadow: 5px 5px 5px salmon;
+  box-shadow: 5px 5px 5px dimgrey;
   z-index:-2;
   display:table;
 }
@@ -59,14 +62,14 @@ div.polaroid {
 div.polaroid .caption{
 	font-family: Pacifico;
 	text-align:center;
-	color: #cb5468;
+	color: black;
 	font-weight: bold;
-	font-size:1.2vw;
+	font-size:2.4vw;
 }
 
 div.polaroid img{
-	width: 10vw;
-	height:10vw;
+	width: 20vw;
+	height:20vw;
 	object-fit: cover;
 }
 
@@ -101,38 +104,35 @@ div.rotate_left {
 
 
 body{
+  	max-width: 1920px;
 	margin:0;
-    background-image:linear-gradient(to right, #faa2ab , #ffe98f);  
-    background-attachment:fixed;
+	background-image:linear-gradient(to right, #faa2ab , #ffe98f);  
+	background-attachment:fixed;
     background-size:cover;
     background-position: right 50px;
 
 }
 
+
+
 .setlist{
 	align:right;
-	background-color:rgba(254,131,47,0.5);
-    border-radius: 10px;
     overflow:auto;
 	margin-left:7%;
 	margin-right:7%;
     margin-bottom:7%;
 	margin-top:7%;
-	border: 1px solid white;
-	
+	border:1px solid white;	
+	border-radius:10px;
+	background-color: rgba(37,6,92,0.3);
 
-}
 
-.setlist h2{
-color:rgba(254,246,169,255);
-font-weight:lighter;
 }
 
 
 .Sobre1{
 	align:center;
-	background-color: rgba(133,96,142,0.5);
-    border-radius: 10px;
+	background-color: rgba(37,6,92,0.3);
     overflow:auto;
 	margin-left:7%;
     margin-right:7%;
@@ -141,27 +141,28 @@ font-weight:lighter;
     padding:5%;
 	padding-top:1%;
 	text-align:justify;
-  	border: 1px solid white;
-
+	border:1px solid white;	
+	border-radius:10px;
 
 }
 
 .Sobre1 h2{
-	color:#2c0f2f;
-	font-family:"Pacifico";
+	font-family: "pacifico";
 	text-align:center;
 }
 
 .Sobre1 p{
 	font-family: "Trebuchet MS","sans-serif";
-	color:rgba(41,18,37,255);
+	color:dimgrey);
 	font-font-size:10px;
+}
+
+.Sobre1 a:hover{
+	color:rgba(18,21,78,255);
 }
 
 .downloads{
 	align:center;
-	background-color: rgb(246,214,212);
-    border-radius: 10px;
     overflow:auto;
 	margin-left:7%;
     margin-right:7%;
@@ -169,10 +170,12 @@ font-weight:lighter;
 	MARGIN-bottom:5%;
     padding:5%;
 	padding-top:1%;
-	border: 1px solid white;
+	background-color: rgba(37,6,92,0.3);
+	border:1px solid white;	
+	border-radius:10px;
 	}
 .downloads h2{
-color:#cb5468;
+	color:rgba(51,23,53,255);
 }
 
 p{
@@ -181,7 +184,7 @@ p{
 }
 
 h1{
-	font-family:"Pistilli-Roman";
+	font-family: "Trebuchet MS","sans-serif";
 	color:rgba(18,21,78,255);
 	position:absolute;
 	top: 0;
@@ -191,28 +194,29 @@ h1{
 }
 
 h2{
-	font-family:"Pacifico";
+	font-family: "pacifico";
 	text-align:center;
 	font-size:25px;
+	color:rgba(51,23,53,255);
 
 	}
 }
 
 h3{
-	font-family:"Pacifico";
+	font-family: "Trebuchet MS","sans-serif";
 	text-align:center;
 	color: rgba(204,21,26,255);
 }
 
 h4{
-	font-family:"Pacifico";
+	font-family: "Trebuchet MS","sans-serif";
 	text-align:center;
 	color: purple;
 }
 
 table,td,th,tr{
 	border: 2px dotted;
-    border-color:rgba(254,236,149,255);
+    border-color:rgba(51,23,53,255);
     text-align: center; 
     border-collapse: collapse;
  	border-style: ridge;
@@ -235,7 +239,7 @@ td{
 }
 
 thead{
-	color:rgba(255,246,171,255);
+	color:rgba(51,23,53,255);
 	font-size:1.5vw;
 }
 
@@ -245,7 +249,7 @@ tbody{
 }
 
 tfoot{
-	color:rgba(254,236,149,255);
+	color:rgba(51,23,53,255);
 	font-family:"calibri","sans-serif";
 }
 
@@ -281,6 +285,7 @@ a:active {
 	justify-content: flex-end;
 	z-index:1;
 }
+
 .navbar img{
 	width:200px;
 	height:auto;
@@ -295,11 +300,12 @@ a:active {
 
 .navbar a {
 	display: flex;
-	color: #f2f2f2;
+	color:rgba(18,21,78,255);
 	text-align: right;
 	padding: 30px 16px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 19px;
+	font-weight:bold;
 }
 
 .navbar a:hover {
@@ -321,6 +327,8 @@ footer h2{
 color: rgba(255,246,171,255);
 text-decoration:underline;
 font-weight:lighter;
+font-family: "Pacifico";
+
 }
 
 
@@ -341,8 +349,8 @@ color:orange;
 }
 
 #bg img{
-border-radius: 20px;
-box-shadow: 2px 2px #e8665c, 4px 4px salmon;
+border-radius: 80px;
+box-shadow: 2px 2px #e8665c, 4px 4px crimson;
 width:200px;
 height:auto;
 align:center;
@@ -355,6 +363,165 @@ position: fixed;
 z-index:1;
 }
 
+/*RESOLUÇÃO DE TABLET*/
+@media only screen and (max-width:768px) and (max-height:1024px) {
+	body {
+	}
+	.header img{
+		width:100%;
+		margin-top:7%;
+		box-shadow: 5px 5px 5px rgba(218,97,136,255);
+	}
+	.navbar {
+		overflow: hidden;
+		background-color: rgba(189,8,35,255);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		display:flex;
+		justify-content: flex-end;
+		z-index	:1;
+	}
+	.navbar img{
+		width:200px;
+		height:auto;
+		margin-top:10px;
+		top:1%;
+		left:1%;
+		position:absolute;
+		object-fit:contain;
+	}
+	.navbar a {
+		display: flex;
+		color:rgba(18,21,78,255);
+		text-align: right;
+		padding: 30px 16px;
+		padding-left:1%;
+		padding-right:1%;
+		text-decoration: none;
+		font-size: 2.7vw;
+		font-weight:bold;
+		}
+	
+	div.polaroid {
+	width: 20vw;
+	height:20vw;
+	padding: 1% 1% 1% 1%;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	box-shadow: 5px 5px 5px dimgrey;
+	z-index:-2;
+	display:table;
+	}
+
+	div.polaroid .caption{
+		font-family: Pacifico;
+		text-align:center;
+		color: black;
+		font-weight: bold;
+		font-size:2vw;
+	}
+
+	div.polaroid img{
+		width: 20vw;
+		height:20vw;
+		object-fit: cover;
+
+	}
+	td{
+		width:11%;
+		font-size:1.5vw;
+
+	}
+
+	thead{
+		color:maroon;
+		font-size:1.5vw;
+	}
+
+}
+
+/*RESOLUÇÃO DE SMARTPHONE*/
+@media only screen and (max-width:480px) {
+	body {
+	}
+	.header img{
+		width:100%;
+		margin-top:15%;
+		box-shadow: 5px 5px 5px rgba(218,97,136,255);
+	}
+	.navbar {
+		overflow: ;
+		background-color: rgba(189,8,35,255);
+		position: fixed;
+		top: 0;
+		padding-top:15%;
+		width: 100%;
+		z-index	:1;
+		text-align:center;
+	}
+	.navbar img{
+		width:33vw;
+		height:auto;
+		margin-top:5px;
+		margin-bottom:15px;
+		top:5%;
+		left:33%;
+		position:absolute;
+		object-fit:contain;
+	}
+	.navbar a {
+		display: flex;
+		text-align: center;
+		padding: 2%;
+		padding-left:2.5%;
+		padding-right:2.5%;
+		text-decoration: none;
+		font-size: 4.2vw;
+		background: rgba(18,21,78,255);
+		color: crimson;
+		width:auto;
+		}
+		
+</div>
+
+	div.polaroid {
+	width: 20vw;
+	height:20vw;
+	padding: 1% 1% 1% 1%;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	box-shadow: 5px 5px 5px black	;
+	z-index:-2;
+	display:table;
+	}
+
+	div.polaroid .caption{
+		font-family: Pacifico;
+		text-align:center;
+		color: black;
+		font-weight: bold;
+		font-size:2.4vw;
+	}
+
+	div.polaroid img{
+		width: 20vw;
+		height:20vw;
+		object-fit: cover;
+
+	}
+	td{
+		width:11%;
+		font-size:1.5vw;
+
+	}
+
+	thead{
+		color:maroon;
+		font-size:1.5vw;
+	}
+
+}
 
 
 </style>
@@ -368,7 +535,8 @@ z-index:1;
 
 <!-- Corpo da página -->
 <body>
-	
+
+
 
 <div id="bannertet">	
 </div>
@@ -377,12 +545,12 @@ z-index:1;
 <div class="navbar">
 	<!-- TÍTULO DA PÁGINA -->
 	<img src="https://i.imgur.com/c3InZ1s.png"/>
-  	<a href="#home">Home</a>
-	<a href="#sobretet">Sobre a Turnê</a>
-	<a href="#setlist">Setlist</a>
-	<a href="#downloads">Downloads</a>
-	<a href="#contato">Contato</a>
-
+		<a href="#home">Home</a>
+		<a href="#sobretet">Sobre</a>
+		<a href="#setlist">Setlist</a>
+		<a href="#downloads">Downloads</a>
+		<a href="#contato">Contato</a>
+	</div>
 </div>
 <div class="header">
 <img src="https://i.imgur.com/hiEsZjU.png"/>
@@ -394,6 +562,9 @@ z-index:1;
 
 	<div  class="Sobre1">
 		<h2>Sobre a Turnê</h2>
+<p>Confira o <a href="https://www.taylowswift.com/">website oficial</a>!</p>
+
+
 		<p> The Eras Tour (ou Taylor Swift: The Eras Tour) é a sexta turnê em curso da cantora e compositora estadunidense Taylor Swift, assim como a sua segunda turnê em estádios após a Reputation Stadium Tour (2018). Incapaz de promover os seus álbuns de estúdio Lover (2019), Folklore (2020) e Evermore (2020) por conta da pandemia de COVID-19, ela está embarcando na The Eras Tour em apoio a toda sua discografia, incluindo seu último lançamento, Midnights (2022). A turnê foi oficialmente anunciada em 1 de novembro de 2022, sendo iniciada no dia 17 de março de 2023 em Glendale, Arizona. Até o momento, foram confirmados 71 concertos em estádios na América do Norte, sendo sessenta e dois nos Estados Unidos e nove no Canadá, além de 13 na América Latina: quatro no México, três na Argentina e seis no Brasil (três no Rio de Janeiro e três em São Paulo). Também foram adicionados 10 concertos na Ásia (Japão e Singapura), 7 na Oceania (Austrália) e 50 na Europa. Com um total de 151 apresentações, a turnê se tornou a maior de Taylor em número de concertos, superando a Fearless Tour que detinha esse recorde .</p>
 
 		<p> Anunciada após o lançamento de seu décimo álbum de estúdio, Midnights (2022), a The Eras Tour começou em 17 de março de 2023, em Glendale, Estados Unidos, e deve terminar em 8 de dezembro de 2024, em Vancouver, Canadá. O show dura mais de três horas, com um repertório de 44 músicas divididas em 10 atos distintos que retratam conceitualmente os álbuns. Recebeu aclamação unânime da crítica, com ênfase no conceito, produção, estética, musicalidade, vocais, resistência e versatilidade de Taylor. Swift lançou vários trabalhos durante a turnê: edições estendidas de Midnights, os álbuns regravados Speak Now (Taylor's Version) e 1989 (Taylor's Version) e os videoclipes de "Karma" e "I Can See You", além de "Cruel Summer" como single.</p>
@@ -411,7 +582,7 @@ z-index:1;
 <!-- TABELA -->
 <div class="setlist">
 	<table>
-		<h2>Setlist Organizada Por Era</h2>
+		<h2>Setlist Organizada por Era</h2>
 		<thead>
 		<tr>
 		<th>Lover</th>
@@ -540,11 +711,11 @@ z-index:1;
 
 
 <div class="downloads">
-	<h2>Downloads</h2>
+	<h2>Imagens para Baixar</h2>
 	<div class="Downloads">
-		<!-- BAIXAR IMAGEM DE FUNDO -->
+		<!-- BAIXAR IMAGENS -->
 		<div class="bg">
-		<p>Imagem de Fundo:<p>
+		<p>Nosso banner</p>
 			<div id="bg">
 				<a href="The Eras Tour BG" download><img src="https://cdn.wallpapersafari.com/94/16/SU4MfZ.jpg" alt="Background"></a>
 			</div>
@@ -552,7 +723,8 @@ z-index:1;
 		</div>
 		<hr>
 		<br>
-		<!-- Imagem 1 - MTR -->
+		<!-- Imagem  -->
+
 		<div class="polaroid rotate_right">
 			<div id="mtr">
 				<a href="My Tears Ricochet" download><img src="https://mcdn.wallpapersafari.com/medium/71/92/XnOHU1.jpg" alt="My Tears Ricochet"></a>
@@ -581,16 +753,23 @@ z-index:1;
 		
 	</div>
 </div>
-
+<!--SESSÃO DE CONTATO-->
 <footer id="contato">
 	<h2>Hello, Swiftie!</h2>
 <p>Dúvidas sobre a turnê? Entre em contato com a adm!<br>
   <a href="mailto:theerastourBR@gmail.com">theerastourBR@gmail.com</a></p>
 
+<!--FORMULÁRIO DE CONTATO-->
+<form action="/action_page.php">
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value="Nome"><br>
+   <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value="E-mail"><br>
+  <label for="lname"></label><br>
+  <input type="text" id="lname" name="lname" value="Mensagem"><br><br>
+  <input type="submit" value="Enviar">
 
+</form> 
 </footer>
-
-<!-- Fim do Corpo da página -->
 </body>
-<!-- Fim da estrutura HTML -->
 </html>
